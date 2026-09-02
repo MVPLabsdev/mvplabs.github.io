@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mvplabs.dev/sitemap.xml

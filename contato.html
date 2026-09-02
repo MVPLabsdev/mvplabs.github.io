@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fale com a MVP Labs.">
+    <title>Contato — MVP Labs</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/logo.png">
+    <meta name="theme-color" content="#050505">
+    <meta property="og:title" content="Contato — MVP Labs">
+    <meta property="og:description" content="Fale com a MVP Labs. Conta um pouco sobre o projeto e a gente responde com os próximos passos.">
+    <meta property="og:image" content="assets/logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contato — MVP Labs">
+    <meta name="twitter:description" content="Fale com a MVP Labs.">
+    <meta name="twitter:image" content="assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-36GZ9TP9FW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-36GZ9TP9FW');
+    </script>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <nav class="barra-nav">
+            <a href="index.html" class="marca">
+                <img src="assets/logo.png" alt="MVP Labs">
+                MVP LABS
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="equipe.html">Equipe</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <button class="botao-menu" id="botao-menu" aria-label="Abrir menu">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="secao" style="padding-bottom: 40px;">
+            <div class="envelope">
+                <div class="linha-verde"></div>
+                <h2>Vamos conversar</h2>
+                <p style="color: var(--text-dim); max-width: 56ch; margin-top: 16px;">Conta um pouco sobre o projeto e a gente responde com os próximos passos.</p>
+            </div>
+        </section>
+
+        <section class="secao" style="padding-top: 0;">
+            <div class="envelope contato-grade">
+                <div>
+                    <div class="canal-contato">
+                        <p class="rotulo">E-mail</p>
+                        <a class="valor" href="mailto:mvplabscontato@gmail.com">mvplabscontato@gmail.com</a>
+                    </div>
+                    <div class="canal-contato">
+                        <p class="rotulo">Telefone / WhatsApp</p>
+                        <a class="valor" href="tel:+5511951087440">(11) 95108-7440</a>
+                    </div>
+                    <div class="canal-contato">
+                        <p class="rotulo">Instagram</p>
+                        <a class="valor" href="https://www.instagram.com/mvplabs.dev/" target="_blank" rel="noopener">@mvplabs.dev</a>
+                    </div>
+                    <div class="canal-contato">
+                        <p class="rotulo">Localização</p>
+                        <p class="valor">São Paulo, SP</p>
+                    </div>
+                </div>
+
+                <div class="painel-mapa">
+                    <img src="assets/escritorio.png" alt="Escritório da MVP Labs" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="secao" style="padding-top: 0;">
+            <div class="envelope">
+                <div class="linha-verde"></div>
+                <h2>Ou nos manda uma mensagem</h2>
+                <p style="color: var(--text-dim); max-width: 56ch; margin-top: 16px; margin-bottom: 40px;">Preenche o formulário abaixo e a gente entra em contato o mais rápido possível.</p>
+
+                <form class="form-contato" action="https://formsubmit.co/mvplabscontato@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="Novo contato pelo site MVP Labs">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="contato.html?enviado=true">
+
+                    <div class="form-linha">
+                        <div class="campo">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                        </div>
+                        <div class="campo">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="campo">
+                        <label for="assunto">Assunto</label>
+                        <select id="assunto" name="assunto" required>
+                            <option value="" disabled selected>Selecione o assunto</option>
+                            <option value="Novo projeto">Novo projeto</option>
+                            <option value="Consultoria">Consultoria</option>
+                            <option value="Orçamento">Orçamento</option>
+                            <option value="Parceria">Parceria</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="6" placeholder="Conta um pouco sobre o que você precisa..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="botao primario">Enviar mensagem</button>
+                </form>
+
+                <div class="form-sucesso" id="form-sucesso" style="display: none;">
+                    <div class="sucesso-icone">✓</div>
+                    <h3>Mensagem enviada!</h3>
+                    <p>Obrigado pelo contato. A gente responde o mais rápido possível.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="envelope">
+            <a href="index.html" class="rodape-marca">
+                <img src="assets/logo.png" alt="MVP Labs">
+                MVP LABS
+            </a>
+            <ul class="rodape-nav">
+                <li><a href="equipe.html">Equipe</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <p class="copyright">&copy; 2026 MVP Labs. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

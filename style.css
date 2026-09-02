@@ -1149,7 +1149,7 @@ body::before {
                 transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.hero.reveal.visivel .hero h1 .letra {
+.hero.reveal.visivel h1 .letra {
     opacity: 1;
     transform: translateY(0) rotateX(0);
 }

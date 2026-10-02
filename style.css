@@ -10,8 +10,8 @@
     --line: #232323;
     --text: #f3f3ee;
     --text-dim: #93938c;
-    --green: #8ae52f;
-    --green-deep: #5fa320;
+    --green: #e8b830;
+    --green-deep: #b8901a;
 
     --display: 'Space Grotesk', sans-serif;
     --body: 'IBM Plex Sans', sans-serif;
@@ -269,7 +269,7 @@ button:focus-visible {
 
 .botao:hover {
     transform: translateY(-1px);
-    box-shadow: 0 4px 16px rgba(138, 229, 47, 0.25);
+    box-shadow: 0 4px 16px rgba(232, 184, 48, 0.25);
 }
 
 .botao.primario {
@@ -433,6 +433,16 @@ button:focus-visible {
     border-color: var(--green);
 }
 
+.pessoa .inicial {
+    font-family: var(--display);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--green);
+    opacity: 0.6;
+    letter-spacing: 2px;
+    user-select: none;
+}
+
 .pessoa h3 {
     font-size: 1.15rem;
     margin-bottom: 4px;
@@ -570,6 +580,16 @@ button:focus-visible {
     padding-left: 8px;
 }
 
+.servico-banner {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--line);
+    margin-bottom: 24px;
+}
+
 /* =========================================================
    PÁGINA DE CONTATO
    ========================================================= */
@@ -650,6 +670,7 @@ button:focus-visible {
         grid-template-columns: 1fr 1fr;
     }
 
+
     .contato-grade {
         grid-template-columns: 1fr;
     }
@@ -658,6 +679,8 @@ button:focus-visible {
         grid-template-columns: 1fr;
         gap: 14px;
     }
+
+
 
     .nav-links {
         position: fixed;
@@ -826,7 +849,7 @@ button:focus-visible {
 .campo textarea:focus {
     outline: none;
     border-color: var(--green);
-    box-shadow: 0 0 0 3px rgba(138, 229, 47, 0.15);
+    box-shadow: 0 0 0 3px rgba(232, 184, 48, 0.15);
 }
 
 .campo select {
@@ -1090,17 +1113,17 @@ button:focus-visible {
     inset: -2px;
     clip-path: polygon(14% 0, 100% 0, 100% 86%, 86% 100%, 0 100%, 0 14%);
     background: transparent;
-    box-shadow: 0 0 0 0 rgba(138, 229, 47, 0);
+    box-shadow: 0 0 0 0 rgba(232, 184, 48, 0);
     animation: logoGlow 3s ease-in-out infinite;
     pointer-events: none;
 }
 
 @keyframes logoGlow {
     0%, 100% {
-        box-shadow: 0 0 0 0 rgba(138, 229, 47, 0);
+        box-shadow: 0 0 0 0 rgba(232, 184, 48, 0);
     }
     50% {
-        box-shadow: 0 0 30px 4px rgba(138, 229, 47, 0.2);
+        box-shadow: 0 0 30px 4px rgba(232, 184, 48, 0.2);
     }
 }
 
@@ -1211,7 +1234,7 @@ body::before {
     }
     .hero-logo::after {
         animation: none;
-        box-shadow: 0 0 0 0 rgba(138, 229, 47, 0);
+        box-shadow: 0 0 0 0 rgba(232, 184, 48, 0);
     }
     .scroll-top {
         opacity: 1 !important;
